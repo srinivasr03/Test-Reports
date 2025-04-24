@@ -1,0 +1,278 @@
+stdout | packages/providers/tests/auth.test.ts
+🔰 Starting Auth API Layer Tests
+👤 Test user data initialized
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should complete the full authentication flow successfully
+🔄 Mock Axios client created
+🔧 Auth service initialized
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should complete the full authentication flow successfully
+🎯 Starting full authentication flow test
+📝 Step 1: User Registration
+➡️ Register request prepared: { email: 'john.doe@example.com' }
+📋 Mock registered user response prepared
+🎭 Register mock configured
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should complete the full authentication flow successfully
+✅ Registration successful: { userId: 1 }
+✓ Registration assertions passed
+🔑 Step 2: Initial Login
+➡️ Login request prepared: { email: 'john.doe@example.com' }
+📋 Mock login response prepared
+🎭 Login mock configured
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should complete the full authentication flow successfully
+✅ Initial login successful
+✓ Login assertions passed
+🚪 Step 3: Logout
+➡️ Logout request prepared
+🎭 Logout mock configured
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should complete the full authentication flow successfully
+✅ Logout successful
+✓ Logout assertions passed
+🔄 Step 4: Second Login
+📋 Mock second login response prepared
+🎭 Second login mock configured
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should complete the full authentication flow successfully
+✅ Second login successful
+✓ Second login assertions passed
+🎉 Full authentication flow test completed successfully
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should complete the full authentication flow successfully
+🧹 Mocks cleared after test
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle registration failure gracefully
+🔄 Mock Axios client created
+🔧 Auth service initialized
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle registration failure gracefully
+🎯 Starting registration failure test
+➡️ Register request prepared: { email: 'john.doe@example.com' }
+🎭 Register mock configured for failure
+
+stderr | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle registration failure gracefully
+⚠️ Registration failed as expected
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle registration failure gracefully
+✓ Registration failure assertions passed
+✅ Registration failure test completed
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle registration failure gracefully
+🧹 Mocks cleared after test
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle login failure gracefully
+🔄 Mock Axios client created
+🔧 Auth service initialized
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle login failure gracefully
+🎯 Starting login failure test
+➡️ Invalid login request prepared: { email: 'john.doe@example.com' }
+🎭 Login mock configured for failure
+
+stderr | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle login failure gracefully
+⚠️ Login failed as expected
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle login failure gracefully
+✓ Login failure assertions passed
+✅ Login failure test completed
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle login failure gracefully
+🧹 Mocks cleared after test
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle logout failure gracefully
+🔄 Mock Axios client created
+🔧 Auth service initialized
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle logout failure gracefully
+🎯 Starting logout failure test
+➡️ Invalid logout request prepared
+🎭 Logout mock configured for failure
+
+stderr | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle logout failure gracefully
+⚠️ Logout failed as expected
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle logout failure gracefully
+✓ Logout failure assertions passed
+✅ Logout failure test completed
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle logout failure gracefully
+🧹 Mocks cleared after test
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle token refresh successfully
+🔄 Mock Axios client created
+🔧 Auth service initialized
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle token refresh successfully
+🎯 Starting token refresh test
+➡️ Refresh request prepared
+📋 Mock refresh response prepared
+🎭 Refresh mock configured
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle token refresh successfully
+✅ Token refresh successful
+✓ Refresh assertions passed
+🎉 Token refresh test completed successfully
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle token refresh successfully
+🧹 Mocks cleared after test
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle token refresh failure gracefully
+🔄 Mock Axios client created
+🔧 Auth service initialized
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle token refresh failure gracefully
+🎯 Starting token refresh failure test
+➡️ Invalid refresh request prepared
+🎭 Refresh mock configured for failure
+
+stderr | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle token refresh failure gracefully
+⚠️ Token refresh failed as expected
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle token refresh failure gracefully
+✓ Refresh failure assertions passed
+✅ Token refresh failure test completed
+
+stdout | packages/providers/tests/auth.test.ts > Auth API Layer Tests > should handle token refresh failure gracefully
+🧹 Mocks cleared after test
+
+ ✓  packages  packages/providers/tests/auth.test.ts (6 tests) 12ms
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Login > should successfully login with valid credentials
+🔄 Test environment reset
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Login > should successfully login with valid credentials
+🎯 Starting login test with valid credentials
+📝 Created mock data provider
+👤 Test credentials prepared: { email: 'test@example.com' }
+🔑 Mock auth response configured
+🎭 Login spy setup complete
+▶️ Dispatching login action...
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Login > should successfully login with valid credentials
+✨ Login action completed: { type: 'auth/login/fulfilled' }
+📊 Authentication state: { isAuthenticated: true, hasTokens: true }
+✅ Login test passed successfully
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Login > should handle login failure with invalid credentials
+🔄 Test environment reset
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Login > should handle login failure with invalid credentials
+🎯 Starting login failure test
+⚠️ Invalid credentials prepared: { email: 'test@example.com' }
+🎭 Login spy configured for error
+▶️ Attempting login with invalid credentials...
+
+stderr | packages/store/tests/auth.test.ts > Auth State Layer Tests > Login > should handle login failure with invalid credentials
+⚠️ Login failed as expected: { type: 'auth/login/rejected' }
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Login > should handle login failure with invalid credentials
+📊 Failed auth state: { isAuthenticated: false, hasError: true }
+✅ Login failure test passed
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Register > should successfully register a new user
+🔄 Test environment reset
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Register > should successfully register a new user
+🎯 Starting user registration test
+👤 Registration data prepared: { email: 'test@example.com', name: 'Test User' }
+📝 Mock registered user response configured
+🎭 Register spy setup complete
+▶️ Dispatching register action...
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Register > should successfully register a new user
+✨ Registration completed: { type: 'auth/register/fulfilled' }
+📊 Registration state: { error: null, loading: false }
+✅ Registration test passed successfully
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Register > should handle registration failure with existing email
+🔄 Test environment reset
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Register > should handle registration failure with existing email
+🎯 Starting registration failure test
+⚠️ Existing user data prepared: { email: 'existing@example.com' }
+🎭 Register spy configured for error
+▶️ Attempting registration with existing email...
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Register > should handle registration failure with existing email
+📊 Failed registration state: { error: 'Email already exists', loading: false }
+✅ Registration failure test passed
+
+stderr | packages/store/tests/auth.test.ts > Auth State Layer Tests > Register > should handle registration failure with existing email
+⚠️ Registration failed as expected: { type: 'auth/register/rejected' }
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Logout > should successfully logout user
+🔄 Test environment reset
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Logout > should successfully logout user
+🎯 Starting logout test
+📝 Initial state configured with active session
+🔄 Store reset with authenticated state
+🔑 Logout tokens prepared
+🎭 Logout spy setup complete
+▶️ Dispatching logout action...
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Logout > should successfully logout user
+✨ Logout completed: { type: 'auth/logout/fulfilled' }
+📊 Post-logout state: { isAuthenticated: false, hasTokens: false }
+✅ Logout test passed successfully
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Logout > should handle logout failure
+🔄 Test environment reset
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Logout > should handle logout failure
+🎯 Starting logout failure test
+📝 Initial state configured
+🔄 Store reset with authenticated state
+🔑 Logout tokens prepared
+🎭 Logout spy configured for error
+▶️ Attempting logout with error...
+
+stderr | packages/store/tests/auth.test.ts > Auth State Layer Tests > Logout > should handle logout failure
+⚠️ Logout failed as expected: { type: 'auth/logout/rejected' }
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Logout > should handle logout failure
+📊 Failed logout state: { error: null, loading: false }
+✅ Logout failure test passed
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Token Refresh > should successfully refresh access token
+🔄 Test environment reset
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Token Refresh > should successfully refresh access token
+🎯 Starting token refresh test
+📝 Initial state configured with existing tokens
+🔄 Store reset with authenticated state
+🔑 Refresh tokens prepared
+📝 Mock refresh response configured
+🎭 Refresh spy setup complete
+▶️ Dispatching token refresh action...
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Token Refresh > should successfully refresh access token
+✨ Token refresh completed: { type: 'auth/refreshToken/fulfilled' }
+📊 Post-refresh state: { isAuthenticated: true, hasNewToken: true }
+✅ Token refresh test passed successfully
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Token Refresh > should handle token refresh failure
+🔄 Test environment reset
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Token Refresh > should handle token refresh failure
+🎯 Starting token refresh failure test
+📝 Initial state configured with invalid refresh token
+🔄 Store reset with authenticated state
+🔑 Invalid refresh token prepared
+🎭 Refresh spy configured for error
+▶️ Attempting token refresh with invalid token...
+
+stderr | packages/store/tests/auth.test.ts > Auth State Layer Tests > Token Refresh > should handle token refresh failure
+⚠️ Token refresh failed as expected: { type: 'auth/refreshToken/rejected' }
+
+stdout | packages/store/tests/auth.test.ts > Auth State Layer Tests > Token Refresh > should handle token refresh failure
+📊 Failed refresh state: { error: null, loading: false }
+✅ Token refresh failure test passed
+
+ ✓  packages  packages/store/tests/auth.test.ts (8 tests) 16ms
+
+ Test Files  2 passed (2)
+      Tests  14 passed (14)
+   Start at  22:44:14
+   Duration  785ms (transform 146ms, setup 0ms, collect 336ms, tests 28ms, environment 530ms, prepare 108ms)
